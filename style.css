@@ -1,0 +1,101 @@
+/*
+Theme Name: Custom Form Theme
+Description: A WordPress theme with custom form module
+Version: 1.0
+Author: Your Name
+*/
+
+/* Custom Form Styles */
+#cf-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cf-form div {
+    margin-bottom: 15px;
+}
+
+#cf-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#cf-form input[type="text"],
+#cf-form input[type="email"],
+#cf-form input[type="tel"],
+#cf-form input[type="file"],
+#cf-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#cf-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#cf-form button[type="submit"] {
+    background-color: #007cba;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#cf-form button[type="submit"]:hover {
+    background-color: #005a87;
+}
+
+#cf-form input:focus,
+#cf-form textarea:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 5px rgba(0, 124, 186, 0.3);
+}
+
+/* Error message styling */
+.cf-error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+/* File upload info */
+.cf-file-info {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* reCaptcha container */
+.g-recaptcha {
+    margin: 15px 0;
+    transform: scale(0.77);
+    transform-origin: 0;
+}
+
+/* Form validation error styling */
+#cf-form .error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
